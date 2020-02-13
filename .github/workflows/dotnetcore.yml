@@ -12,6 +12,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.0-alpha1.19429.1
+        dotnet-version: 5.0.0-preview.1.20107.7
+        source-url: https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json
     - name: Build with dotnet
       run: dotnet build --configuration Release
