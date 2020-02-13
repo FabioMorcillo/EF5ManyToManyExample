@@ -13,6 +13,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.100-preview.1.20108.3
-        source-url: https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json
+        source-url: https://api.nuget.org/v3/index.json
     - name: Build with dotnet
       run: dotnet build --configuration Release
