@@ -13,6 +13,5 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.100-alpha.1.20066.6
-        source-url: https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json
     - name: Build with dotnet
       run: dotnet build --configuration Release
