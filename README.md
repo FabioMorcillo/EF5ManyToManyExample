@@ -8,4 +8,4 @@ https://medium.com/@fabiomorcillopro/entity-framework-core-5-many-to-many-exampl
 
 ## Deseja contribuir para este projeto ?
 
-Envie o pull request com suas sugestões.
+Envie o pull request com as suas sugestões.
