@@ -1,5 +1,7 @@
 ﻿using ManyToManyExample.Context;
 
+using Microsoft.EntityFrameworkCore;
+
 namespace ManyToManyExample.Repositories
 {
     public static class Repository
@@ -8,6 +10,8 @@ namespace ManyToManyExample.Repositories
 
         public static void Initialize()
         {
+            Context.Database.Migrate();
+
             RemoveAll();
 
             var (post1, post2, post3) = PostRepository.AddRange();
