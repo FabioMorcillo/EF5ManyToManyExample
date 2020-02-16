@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using ConsoleApp16.Models;
+﻿using ManyToManyExample.Models;
+
 using Microsoft.EntityFrameworkCore;
 
-namespace ConsoleApp16.Context
+namespace ManyToManyExample.Context
 {
     public class EF5DbContext : DbContext
     {
@@ -10,7 +10,9 @@ namespace ConsoleApp16.Context
             => options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=EF5;Integrated Security=True");
 
         public DbSet<Post> Posts { get; set; }
+
         public DbSet<Tag> Tags { get; set; }
+
         public DbSet<PostTag> PostsTags { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

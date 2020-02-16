@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ConsoleApp16.Migrations
+namespace ManyToManyExample.Migrations
 {
     public partial class Initial : Migration
     {
